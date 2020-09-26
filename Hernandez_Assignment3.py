@@ -48,13 +48,13 @@ while not quit:
                     print(line)
                     break
 
-    # elif option == 3:
+    elif option == 3:
 
-        # reader = csv.reader(open("mergedCompanyList.csv"), re=',')
-        # for Symbol, Name, LastSale, MarketCap, ADR, TSO, IPOyear, Sector, Industry, SummaryQuote, in reader:
-        #     sortedList = sorted(reader, key=operator.itemgetter(2), reverse=True)
-        #     print(sortedList)
-            # display 15 companies with highest market cap
+        reader = csv.reader(open("mergedCompanyList.csv"), delimeter=',')
+        for Symbol, Name, LastSale, MarketCap, ADR, TSO, IPOyear, Sector, Industry, SummaryQuote, in reader:
+            sortedList = sorted(reader, key=operator.itemgetter(2), reverse=True)
+            print(sortedList)
+            display 15 companies with highest market cap
 
     elif option == 4:
         quit = True
