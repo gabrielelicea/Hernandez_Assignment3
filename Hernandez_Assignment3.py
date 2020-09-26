@@ -1,7 +1,6 @@
 import requests
 import csv
 import operator
-import re
 
 
 def listMerger(link):
